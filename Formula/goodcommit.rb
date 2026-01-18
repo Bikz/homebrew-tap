@@ -1,15 +1,15 @@
 class Goodcommit < Formula
   desc "Good Commit: fast, reliable AI commit messages"
   homepage "https://github.com/Bikz/goodcommit"
-  version "0.2.5"
+  version "0.2.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Bikz/goodcommit/releases/download/v0.2.5/goodcommit-aarch64-apple-darwin.tar.gz"
-      sha256 "d16a90485b1a16f3f8905a6929ffa4417940a6629e5f58e0c058ad5256295b6b"
+      url "https://github.com/Bikz/goodcommit/releases/download/v0.2.7/goodcommit-aarch64-apple-darwin.tar.gz"
+      sha256 "31d60aee3b54c068f14f85acab2ac6d82b5afcbdc99e1b36f376212284a9c2ba"
     else
-      url "https://github.com/Bikz/goodcommit/releases/download/v0.2.5/goodcommit-x86_64-apple-darwin.tar.gz"
-      sha256 "117cd261d300319e903e5bfd55726dc79f35b03e39028625e5ad3db2641bb665"
+      url "https://github.com/Bikz/goodcommit/releases/download/v0.2.7/goodcommit-x86_64-apple-darwin.tar.gz"
+      sha256 "9b9656e9513efd88a44ebb2b7d96c1165d167d8c57ffa9412442fb27c0edb820"
     end
   end
 
@@ -18,8 +18,8 @@ class Goodcommit < Formula
       odie "linux arm64 builds are not yet available"
     end
 
-    url "https://github.com/Bikz/goodcommit/releases/download/v0.2.5/goodcommit-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e856dd6e0d91cdd865d81ac7664f0808c659a8747b2239ebb13ad83b9084a794"
+    url "https://github.com/Bikz/goodcommit/releases/download/v0.2.7/goodcommit-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "65c5a6e881be9e1f338ec74f3a12514e6e1381a76e7e4cf845bfc3c899338c74"
   end
 
   def install
